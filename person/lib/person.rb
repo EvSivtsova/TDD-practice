@@ -6,6 +6,6 @@ class Person
   end
 
   def full_name
-    "Anna Jane Smith"
+    @first_name + " " + @middle_name + " " + @last_name
   end
 end
