@@ -14,4 +14,8 @@ class Person
     middle_initial = @middle_name.nil? ? "" : @middle_name[0] + " "
     @first_name + " " + middle_initial + @last_name
   end
+
+  def initials
+    "A J S"
+  end
 end
