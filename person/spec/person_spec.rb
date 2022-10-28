@@ -31,4 +31,16 @@ describe Person do
       expect(person.full_name).to eq("Anna Smith")
     end
   end
+
+  describe "#full_name_with_middle_initial" do
+    it "concatenates first name, middle initial, and last name with spaces" do
+      person = Person.new(
+        first_name: "Anna",
+        middle_name: "Jane",
+        last_name: "Smith"
+      )
+
+      expect(person.full_name_with_middle_initial).to eq("Anna J Smith")
+    end
+  end
 end
