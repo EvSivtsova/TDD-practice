@@ -11,6 +11,6 @@ class Person
   end
 
   def full_name_with_middle_initial
-    "Anna J Smith"
+    @first_name + " " + @middle_name[0] + " " +@last_name
   end
 end
