@@ -1,4 +1,4 @@
-require 'calculator.rb'
+require 'calculator'
 
 describe Calculator do
   describe "#add" do

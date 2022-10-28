@@ -1,13 +1,13 @@
 class Calculator
-  def add(a, b)
-    a + b
+  def add(num1, num2)
+    num1 + num2
   end
 
-  def factorial(n)
-    if n <= 1
+  def factorial(num)
+    if num.zero?
       1
     else
-      n * factorial(n - 1)
+      (1..num).reduce(:*)
     end
   end
 end
