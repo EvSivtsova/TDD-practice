@@ -16,6 +16,6 @@ class Person
   end
 
   def initials
-    "A J S"
+    @first_name[0] + " " + @middle_name[0] + " " + @last_name[0]
   end
 end

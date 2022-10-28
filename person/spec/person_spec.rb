@@ -73,5 +73,15 @@ describe Person do
 
       expect(person.initials).to eq("A J S")
     end
+
+    it "concatenates initials of different first name, middle initial, and last name with spaces" do
+      person = Person.new(
+        first_name: "Chloe",
+        middle_name: "Mary",
+        last_name: "Oscar"
+      )
+
+      expect(person.initials).to eq("C M O")
+    end
   end
 end
