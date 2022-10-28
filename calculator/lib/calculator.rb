@@ -4,6 +4,10 @@ class Calculator
   end
 
   def factorial(n)
-    1
+    if n <= 1
+      1
+    else
+      n * factorial(n - 1)
+    end
   end
 end
