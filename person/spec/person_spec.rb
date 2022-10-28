@@ -19,8 +19,8 @@ describe Person do
         last_name: "Oscar"
       )
 
-        expect(person.full_name).to eq("Chloe Mary Oscar")
-      end
+      expect(person.full_name).to eq("Chloe Mary Oscar")
+    end
       
     it "does not add extra spaces if middle name is missing" do
       person = Person.new(

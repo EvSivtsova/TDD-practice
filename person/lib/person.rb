@@ -6,10 +6,7 @@ class Person
   end
 
   def full_name
-    if !@middle_name.nil?
-      @first_name + " " + @middle_name + " " + @last_name
-    else
-      @first_name + " " + @last_name
-    end
+    @middle_name = @middle_name.nil? ? "" : @middle_name + " "
+    @first_name + " " + @middle_name + @last_name
   end
 end
