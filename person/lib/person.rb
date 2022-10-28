@@ -16,6 +16,10 @@ class Person
   end
 
   def initials
-    @first_name[0] + " " + @middle_name[0] + " " + @last_name[0]
+    if @middle_name.nil?
+      @first_name[0] + " " + @last_name[0]
+    else
+      @first_name[0] + " " + @middle_name[0] + " " + @last_name[0]
+    end
   end
 end

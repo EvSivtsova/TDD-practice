@@ -83,5 +83,14 @@ describe Person do
 
       expect(person.initials).to eq("C M O")
     end
+
+    it "does not add extra spaces if middle name is missing" do
+      person = Person.new(
+        first_name: "Anna",
+        last_name: "Smith"
+      )
+
+      expect(person.initials).to eq("A S")
+    end
   end
 end
